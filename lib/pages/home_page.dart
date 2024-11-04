@@ -5,15 +5,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tablesList = [
-      for (int i = 0; i < 6; i++)
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            for (int i = 0; i < 3; i++) TableWidget(),
-          ],
-        ),
-    ];
+    final tablesList = List.generate(6, (index) {
+      return Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: List.generate(3, (index) => TableWidget()),
+      );
+    }).toList();
 
     return Scaffold(
       appBar: AppBar(
