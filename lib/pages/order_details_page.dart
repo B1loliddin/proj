@@ -14,6 +14,7 @@ class OrderDetailsPage extends StatelessWidget {
 
     void okButtonOnPressed() {
       Navigator.pop(context);
+      debugPrint('AAA');
     }
 
     void leaveTableOnPressed() {
