@@ -5,6 +5,9 @@ class OrderDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final name =
+        (ModalRoute.of(context)?.settings.arguments as String?) ?? '';
+
     void callServerOnPressed() {}
 
     void cancelButtonOnPressed() => Navigator.pop(context);
