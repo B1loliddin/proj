@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -22,6 +21,10 @@ class _SplashPageState extends State<SplashPage> {
         if (mounted) Navigator.of(context).pushReplacementNamed('home-page');
       },
     );
+
+    debugPrint('AAA');
+    debugPrint('AAA');
+    debugPrint('AAA');
   }
 
   @override
