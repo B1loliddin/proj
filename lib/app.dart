@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proj/pages/home_page.dart';
+import 'package:proj/pages/order_details_page.dart';
 import 'package:proj/pages/splash_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashPage(),
         'home-page': (context) => HomePage(),
+        'order-details-page': (context) => OrderDetailsPage(),
       },
       initialRoute: '/',
       // home: HomePage(),
