@@ -21,6 +21,8 @@ class _SplashPageState extends State<SplashPage> {
         if (mounted) Navigator.of(context).pushReplacementNamed('home-page');
       },
     );
+
+    debugPrint('AAA');
   }
 
   @override
