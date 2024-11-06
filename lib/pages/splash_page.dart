@@ -23,6 +23,8 @@ class _SplashPageState extends State<SplashPage> {
     );
 
     debugPrint('AAA');
+    debugPrint('AAA');
+    debugPrint('AAA');
   }
 
   @override
